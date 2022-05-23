@@ -74,8 +74,6 @@ function isTriangle(a,b,c)
 function transpose(song, interval){
    const sharpNotes = ['A', 'A#', 'B', 'C','C#','D','D#','E','F','F#','G','G#']
    const flatNotes = ['A', 'Bb', 'B', 'C','Db','D','Eb','E','F','Gb','G','Ab']
-   
-  
   
    return song.map(note => {
      let isFlatNote = flatNotes.indexOf(note);
@@ -125,3 +123,29 @@ function filter_list(l) {
      }
     })
 }
+
+// Minimize Sum Of Array (Array Series #1)
+function minSum(arr) {
+   let fromSmallest = arr.sort((a, b) => a-b)
+   let sum = 0;
+  
+   for(let i=0; i < arr.length  /2; i++){
+     sum += arr[i] * arr[arr.length - i -1]
+   }
+  
+    return sum
+}
+
+// Sum of two lowest positive integers
+function sumTwoSmallestNumbers(numbers) {  
+   return numbers.sort((a, b) => a - b)
+                 .slice(0, 2)
+                 .reduce((a, b) => a + b, 0)
+}
+
+// Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+   return this.split(' ')
+              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' ')
+};
