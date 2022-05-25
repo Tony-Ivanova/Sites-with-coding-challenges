@@ -5,3 +5,7 @@ In this repository you will find my solutions to various exercises from coding s
 ### The ***Codility*** folder contains: 
    Solutions: [My Solutions](https://github.com/Tony-Ivanova/Sites-with-coding-challenges/tree/main/Codility)  
    The site: [Codility](https://app.codility.com/programmers/trainings/9/)  
+
+### The ***Codewars*** folder contains: 
+   Solutions: [My Solutions](https://github.com/Tony-Ivanova/Sites-with-coding-challenges/tree/main/Codewars)  
+   The site: [Codility](https://codewars.com) 
