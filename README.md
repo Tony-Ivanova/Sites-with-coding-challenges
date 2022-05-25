@@ -8,4 +8,4 @@ In this repository you will find my solutions to various exercises from coding s
 
 ### The ***Codewars*** folder contains: 
    Solutions: [My Solutions](https://github.com/Tony-Ivanova/Sites-with-coding-challenges/tree/main/Codewars)  
-   The site: [Codility](https://codewars.com) 
+   The site: [Codewars](https://codewars.com) 
