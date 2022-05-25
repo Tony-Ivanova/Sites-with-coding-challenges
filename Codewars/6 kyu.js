@@ -48,3 +48,38 @@ function persistence(num) {
   
    return iterations;
 }
+
+// Find the odd int
+function findOdd(A) {
+   let arr = {}
+ 
+  A.forEach(x => {
+    arr[x] = arr[x] ? arr[x] + 1 : 1
+  })
+  
+  return Number(Object.keys(arr).find(key => arr[key] % 2 === 1))
+}
+
+// Find the unique number
+function findUniq(arr) {
+    return Number(arr.filter(x => arr.indexOf(x) === arr.lastIndexOf(x)))
+}
+
+// If you can read this...
+function to_nato(words) {
+  let h =  {
+    "A": "Alfa",   "B": "Bravo",   "C": "Charlie",
+    "D": "Delta",  "E": "Echo",    "F": "Foxtrot",
+    "G": "Golf",   "H": "Hotel",   "I": "India",
+    "J": "Juliett","K": "Kilo",    "L": "Lima",
+    "M": "Mike",   "N": "November","O": "Oscar",
+    "P": "Papa",   "Q": "Quebec",  "R": "Romeo",
+    "S": "Sierra", "T": "Tango",   "U": "Uniform",
+    "V": "Victor", "W": "Whiskey", "X": "Xray",
+    "Y": "Yankee", "Z": "Zulu", 
+    ",": ",",     ".": ".",
+    "!": "!",     "?": "?",
+  }
+  
+  return [...words.toUpperCase()].map(x => h[x]).filter(y => y !== undefined).join(' ')
+}
