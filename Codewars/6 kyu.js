@@ -83,3 +83,8 @@ function to_nato(words) {
   
   return [...words.toUpperCase()].map(x => h[x]).filter(y => y !== undefined).join(' ')
 }
+
+// Counting Duplicates
+function duplicateCount(text){
+  return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+}
