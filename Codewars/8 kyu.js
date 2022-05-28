@@ -108,7 +108,10 @@ function check(a, x) {
   return a.includes(x)
 }
 
-
+// DNA to RNA Conversion
+function DNAtoRNA(dna){
+  return dna.replace(/T/g, 'U');
+}
 
 
 
