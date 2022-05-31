@@ -88,3 +88,16 @@ function to_nato(words) {
 function duplicateCount(text){
   return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
 }
+
+// Are they the "same"?
+function comp(array1, array2){
+  
+ if(!array1 || !array2){
+   return false
+ } 
+  
+  array1.sort((a, b) => a - b); 
+  array2.sort((a, b) => a - b);
+  
+  return array1.map(v => v * v).every((v, i) => v == array2[i]);
+}
