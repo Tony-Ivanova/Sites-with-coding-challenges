@@ -235,3 +235,8 @@ function accum(s) {
 function oddOrEven(array) {
     return array.reduce((a, b) => a+b, 0) % 2 === 0 ? 'even':'odd'
 }
+
+// Format of a ticket number
+function nbrValidTickets(tickets){
+  return tickets.filter(v=>/^[a-z]\d[a-z]{4}$/i.test(v)).length
+}
