@@ -240,3 +240,15 @@ function oddOrEven(array) {
 function nbrValidTickets(tickets){
   return tickets.filter(v=>/^[a-z]\d[a-z]{4}$/i.test(v)).length
 }
+
+
+//Wealth equality, finally!
+function redistributeWealth(wealth) {
+  const sumOfWealth = wealth.reduce((acc, value) => acc += value, 0);
+
+  const citizens = wealth.length;
+  
+  const wealthPerCap = sumOfWealth / citizens; 
+  
+  let newArr =  wealth.fill(wealthPerCap);
+}
